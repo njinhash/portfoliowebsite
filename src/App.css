@@ -1,25 +1,28 @@
 :root {
-  --background-color: #fff;
-  --btn-color: #0987f2;
-  --btn-text-color: #fff;
+  --background: linear-gradient(to right, #928DAB, #00d2ff);
+  --btn-color: #58e0ff;
+  --btn-text-color: #000222;
   --project-card-bg: #ffffff00;
-  --text-color: #222;
-  --form-text-color: #555;
-  --footer-text-color: #888;
+  --text-color: #000222;
+  --form-text-color: #222;
+  --footer-text-color: #000222;
 }
 
 [data-theme='dark'] {
-  --background-color: #222;
+  --background:linear-gradient(to right, #24243e, #302b63, #0f0c29);
   --btn-color: #fff;
-  --btn-text-color: #222;
+  --btn-text-color: #000222;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
 }
 
+
+
+
 body {
-  background-color: var(--background-color);
+  background: var(--background);
   display: flex;
   justify-content: center;
   margin: 0 auto 60px;

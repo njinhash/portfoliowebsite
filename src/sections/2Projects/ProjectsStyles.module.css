@@ -8,7 +8,25 @@
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   }
+
+ 
+  button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    cursor: pointer;
+
+  }
+ 
 
   a {
     width: fit-content;
@@ -17,8 +35,8 @@
     transition: transform 200ms ease-in-out;
   }
 
-  a:hover {
-    transform: scale(1.05);
+  a:hover,  button:hover, img:hover  {
+    transform: scale(1.15);
   }
 }
 
