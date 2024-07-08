@@ -15,9 +15,27 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const fccIcon = theme === 'light' ? fccLight : fccDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+
+  const socialMedia = [
+    {
+      link: "https://www.freecodecamp.org/DAcamper",
+      icon: theme === 'light' ? fccLight : fccDark,
+      alt: "Fcc icon",
+      className: "fcc"
+    },
+    {
+      link: "https://github.com/njinhash?tab=repositories",
+      icon: theme === 'light' ? githubLight : githubDark,
+      alt: "Github icon",
+      className: "github"
+    },
+    {
+      link: "https://www.linkedin.com/in/daniel-acebo-17b708248/",
+      icon: theme === 'light' ? linkedinLight : linkedinDark,
+      alt: "Linkedin icon",
+      className: "linkedin"
+    }
+  ];
 
   return (
     <section id="hero" className={styles.container}>
@@ -25,7 +43,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile of Daniel"
         />
         <img
           className={styles.colorMode}
@@ -42,22 +60,17 @@ function Hero() {
         </h1>
         <h2>Frontend Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={fccIcon} alt="Twitter icon" />
-          </a>
-          <a href="https://github.com/" target="_blank">
-            <img src={githubIcon} alt="Github icon" />
-          </a>
-          <a href="https://linkedin.com/" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
-          </a>
+          {socialMedia.map((media, index) => (
+            <a key={index} href={media.link} rel="noreferrer" target="_blank">
+              <img className={media.className} src={media.icon} alt={media.alt} />
+            </a>
+          ))}
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+        Mastering HTML, CSS, JavaScript, and React for building responsive, engaging web applications.
         </p>
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          <button className="hover">Download CV</button>
         </a>
       </div>
     </section>

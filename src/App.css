@@ -92,8 +92,14 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
+  
+
 
   @media (width >= 1400px) {
+    .colorMode {
+      width: 30px;
+    }
+  
     #root {
       gap: 200px;
     }
@@ -104,5 +110,7 @@ p {
     .sectionTitle {
       margin-bottom: 75px;
     }
+
+    
   }
 }
