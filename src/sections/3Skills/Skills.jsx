@@ -9,9 +9,9 @@ function Skills() {
   const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
 
   const skills = [
-    ["HTML", "CSS", "JavaScript", "TypeScript", "Node"],
-    ["React", "Angular", "Vue", "Tailwind CSS"],
-    ["Redux", "Webpack", "Git", "Jest", "Bootstrap"]
+    ["HTML", "CSS", "JavaScript",
+    "React",
+    "Redux", "Git",  "Bootstrap"]
   ];
 
   return (

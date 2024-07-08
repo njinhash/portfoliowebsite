@@ -1,7 +1,7 @@
 :root {
   --background: linear-gradient(to right, #928DAB, #00d2ff);
-  --btn-color: #58e0ff;
-  --btn-text-color: #000222;
+  --btn-color: #00d2ff;
+  --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
   --text-color: #000222;
   --form-text-color: #222;
@@ -11,7 +11,7 @@
 [data-theme='dark'] {
   --background:linear-gradient(to right, #24243e, #302b63, #0f0c29);
   --btn-color: #fff;
-  --btn-text-color: #000222;
+  --btn-text-color: #222;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
