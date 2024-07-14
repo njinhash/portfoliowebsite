@@ -24,12 +24,14 @@
   }
   
   .gradientText {
-    background: linear-gradient(#a80077,#66ff00, #a80077, #66ff00);
+    background: linear-gradient(to right, #fff,#CACACA);
     background-size: 400% 400%;
-    -webkit-background-clip: text;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Webkit-specific property */
     -webkit-text-fill-color: transparent;
     animation: gradient 5s ease infinite;
-  }
+}
+
   
   .colorMode {
     background-size: cover;
