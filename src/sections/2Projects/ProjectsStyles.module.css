@@ -7,11 +7,13 @@
   
 
   img {
-    max-width: 250px;
+    max-width: 150px;
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    
+    
   }
 
  

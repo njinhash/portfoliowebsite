@@ -1,12 +1,9 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
 import ProjectCard from '../../common/ProjectCard';
-
-
-
+import calorie from '../../assets/calorie.jpg';
+import dragonlance from '../../assets/dragonlance.jpg';
+import mytunez from '../../assets/mytunez.jpg';
+import pokedex  from '../../assets/pokedex .jpg';
 
 function Projects() {
   return (
@@ -14,32 +11,32 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
-          githubLink="https://www.youtube.com/"
+          src={calorie}
+          link="https://caloriccalculator.netlify.app/"
+          h3="calorie"
+          p="calorie calculator app"
+          githubLink="https://github.com/njinhash/calorie"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
-          githubLink="https://www.netflix.com/"
+          src={dragonlance}
+          link="https://dragonlance.netlify.app/"
+          h3="dragonlance"
+          p="basic rpg game"
+          githubLink="https://github.com/njinhash/rpg"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-          githubLink="https://www.google.com/"
+          src={mytunez}
+          link="https://mytunezmp3.netlify.app/"
+          h3="mytunez"
+          p="basic mp3 player"
+          githubLink="https://github.com/njinhash/player"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
-          githubLink="https://www.facebook.com/"
+          src={pokedex}
+          link="https://apppokesearch.netlify.app/"
+          h3="pokedex"
+          p="pokemon search App"
+          githubLink="https://github.com/njinhash/poke"
         />
       </div>
     </section>

@@ -4,7 +4,7 @@ import React from 'react';
 
 function ProjectCard({ src, link, h3, p, githubLink}) {
   return (
-    <div>
+    <div className='projectContainer'>
       <a href={link} rel="noreferrer" target="_blank">
       <img className="hover" src={src} alt={`${h3} logo`} />
       <h3>{h3}</h3>
