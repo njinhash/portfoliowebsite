@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,98 +17,93 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
-
-  .hero {
-    max-width: 200px;
-  }
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .gradientText {
-    background: linear-gradient(to right, #fff,#CACACA);
-    background-size: 400% 400%;
-    background-clip: text; /* Standard property */
-    -webkit-background-clip: text; /* Webkit-specific property */
-    -webkit-text-fill-color: transparent;
-    animation: gradient 5s ease infinite;
+  animation: fadeInUp 1s ease-out; /* Add animation to container */
 }
 
-  
-  .colorMode {
-    background-size: cover;
-    border-radius: 50%;
-    border: none;
-    width: 70px;
-    position: relative ;
+.hero {
+  max-width: 200px;
+  animation: fadeInUp 1.2s ease-out; /* Add animation to hero image */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-
-
-  span {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-
-    a {
-      margin: 0;
-
-      img {
-        width: 35px;
-        background-size: cover;
-      }
-
-      
-    }
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
- 
+.gradientText {
+  background: linear-gradient(to right, #fff, #CACACA);
+  background-size: 400% 400%;
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* Webkit-specific property */
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite, fadeInUp 1.4s ease-out; /* Add animation to gradient text */
+}
 
+.colorMode {
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  width: 70px;
+  position: relative;
+  animation: fadeInUp 1.6s ease-out; /* Add animation to color mode icon */
+}
+
+span {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  animation: fadeInUp 1.8s ease-out; /* Add animation to social media icons */
 
   a {
-    background-size: cover;
-    width: fit-content;
-    align-self: center;
-    background-size: cover;
-    border-radius: 50%;
-    
-  }
+    margin: 0;
 
-  button {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 20px;
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    img {
+      width: 35px;
+      background-size: cover;
+    }
   }
+}
 
-  button, img:not(.hero) {
-    transition: transform 0.3s ease;
+a {
+  background-size: cover;
+  width: fit-content;
+  align-self: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  animation: fadeInUp 2s ease-out; /* Add animation to button */
+}
+
+button, img:not(.hero) {
+  transition: transform 0.3s ease;
 }
 
 button:hover, img:not(.hero):hover {
-    transform: scale(1.30);
+  transform: scale(1.30);
 }
 
-
-
-  button:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .colorModeContainer {
@@ -117,17 +123,17 @@ button:hover, img:not(.hero):hover {
 .description {
   max-width: 24ch;
   font-weight: 450;
+  animation: fadeInUp 2.2s ease-out; /* Add animation to description */
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: fadeInUp 2.4s ease-out; /* Add animation to info container */
 }
 
-
 @media (width >= 400px) {
- 
   .colorMode {
     width: 30px;
     max-width: 30px;
